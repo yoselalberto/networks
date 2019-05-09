@@ -5,10 +5,14 @@ MAINTAINER "Alberto Jaimes" yoselerratil@gmail.com
 
 RUN install2.r --error --deps TRUE \
     aws.s3 \
-    igraph \
     && installGithub.r -d TRUE \
     hadley/multidplyr
 
 
-RUN install2.r --error --deps TRUE \
-    tidygraph
+RUN apt-get update -qq && apt-get -y --no-install-recommends install \
+    mesa-common-dev \
+    libglu1-mesa-dev \
+    freeglut3-dev \
+    && install2.r --error --deps TRUE \
+    igraph
+
