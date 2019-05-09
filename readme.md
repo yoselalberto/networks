@@ -9,11 +9,14 @@ The current working directory is mount as `app`.
 
 Build the image with  
 
-    `docker build -t image_tag .`
-
+```
+docker build -t image_tag .
+```
 run a persistent container with  
  
-    `docker run -d -p 8787:8787 -e PASSWORD=your_password -v` pwd`:/app image_tag sh data_integration.R`
+```
+docker run -d -p 8787:8787 -e PASSWORD=your_password -v` pwd`:/app image_tag sh data_integration.R
+```
 
 To use `Rstudio server` point your browser to localhost:8787, log with user/password `rstudio/your_password.
 
