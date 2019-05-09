@@ -1,6 +1,8 @@
 ## basic graph analysis 
 
-The environment contains an instance of Rstudio server, useful for interactive analysis or quick development.
+The environment contains an instance of Rstudio server, useful for interactive analysis or quick development.  
+
+The current working directory is mount as `app`.
 
 
 ### usage
