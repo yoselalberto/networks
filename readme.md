@@ -5,8 +5,12 @@ The environment contains an instance of Rstudio server, useful for interactive a
 
 ### usage
 
-Build the image with `docker build -t image_tag .`, run a persistent container with 
-`docker run -d -p 8787:8787 -e PASSWORD=your_password -v` pwd`:/app image_tag sh data_integration.R`  
+Build the image with  
+
+`docker build -t image_tag .`,  
+run a persistent container with  
+ 
+`docker run -d -p 8787:8787 -e PASSWORD=your_password -v` pwd`:/app image_tag sh data_integration.R`.
 
 To use `Rstudio server` point your browser to localhost:8787, log with user/password `rstudio/your_password`
 
